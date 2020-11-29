@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body>
+    <div class="all">
+        <div>
+            <div>
+                <input type="text" name="result" id="result" />
+            </div>
+        
+            <div class="teclas">
+                
+                    <div class="linha">
+                        <div>
+                            <button type="button" class="c" onclick="clearAll()">C</button>
+                            <button type="button" class="op" onclick="pressOp(this)">/</button>
+                        </div>
+                    </div>
+    
+                <div class="linha">
+                    <div>
+                        <button type="button" class="button" onclick="pressNumber(this)">7</button>
+                        <button type="button" class="button" onclick="pressNumber(this)">8</button>
+                        <button type="button" class="button" onclick="pressNumber(this)">9</button>
+                        <button type="button" class="op" onclick="pressOp(this)">*</button>
+                    </div>
+                </div>
+    
+                <div class="linha">
+                    <div>
+                        <button type="button" class="button" onclick="pressNumber(this)">4</button>
+                        <button type="button" class="button" onclick="pressNumber(this)">5</button>
+                        <button type="button" class="button" onclick="pressNumber(this)">6</button>
+                        <button type="button" class="op" onclick="pressOp(this)">-</button>
+                    </div>
+                </div>
+    
+                <div class="linha">
+                    <div>
+                        <button type="button" class="button" onclick="pressNumber(this)">1</button>
+                        <button type="button" class="button" onclick="pressNumber(this)">2</button>
+                        <button type="button" class="button" onclick="pressNumber(this)">3</button>
+                        <button type="button" class="op" onclick="pressOp(this)">+</button>
+                    </div>
+                </div>
+    
+                <div class="linha">
+                    <div>
+                        <button hidden></button>
+                        <button type="button" class="zero" onclick="pressNumber(this)">0</button>
+                        <button type="button" onclick="pressNumber(this)">.</button>
+                        <button type="button" class="igual" id="igual" onclick="igual()">=</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!--FINAL-->
+    <script type="text/javascript" src="./js/script.js"></script>
+</body>
+</html>
